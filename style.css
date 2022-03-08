@@ -1,0 +1,148 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 375px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98.5%;
+    background: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca';
+    font-size: 1.8rem;
+    margin: 2rem 2.4rem
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.text {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter';
+    opacity: 0.6;
+    margin: 0 3rem;
+    line-height: 1.8rem;
+}
+
+h2 {
+    font-family: 'Inter';
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 0.5rem 0.8rem;
+    padding-top: 1.4rem;
+}
+
+p:last-of-type {
+    padding-bottom: 1.6rem;
+}
+
+.stats p {
+    font-family: 'Inter';
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.4;
+    letter-spacing: 0.1rem;
+    margin-top: 0;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    .header {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 3rem 0;
+    }
+
+    .content {
+        width: 55%;
+    }
+
+    .text {
+        font-size: 1rem;
+        margin: 0;
+        padding-right: 7rem;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .color-overlay {
+        height: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .stats div {
+        padding-right: 5rem;
+    }
+
+}
+
+
+
+.attribution { 
+    font-family: 'Inter';
+    color: white;
+    margin-top: 1.2rem;
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
